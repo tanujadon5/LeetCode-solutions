@@ -1,4 +1,4 @@
-```c
+
 
 ### An array is a basic data structure to store a collection of elements sequentially.
 
@@ -8,4 +8,4 @@
 
 ### Therefore, most programming languages offer built-in dynamic array which is still a random access list data structure but with variable size. For example, we have vector in C++
 
-```
+
