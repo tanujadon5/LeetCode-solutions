@@ -1,0 +1,27 @@
+https://leetcode.com/submissions/detail/592358874/
+
+```c
+class Solution {
+public:
+    int pivotIndex(vector<int>& nums) {
+        int sum = 0;
+        int lsum = 0;
+        for(auto it : nums){
+            sum += it; //cal. sum
+        }
+        for(size_t i = 0; i<nums.size(); i++){
+            sum -= nums[i];// subtract the current ele from sum
+            //gives right sum after the element
+            
+            if(sum == lsum){
+                return i;
+            }
+            
+            lsum += nums[i];//add the current ele to cal. left sum
+        }
+        return -1;
+
+        
+    }
+};
+```
