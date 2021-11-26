@@ -98,10 +98,10 @@ for(auto z=q.begin();z!=q.end();z++){   //traversing from beginning till end
 for(auto z=q.rbegin();z!=q.rend();z++){   //traversing from end till beginning
      cout<<"key is "<<z->first<<" and the value is "<<z->second<<endl; 
 }
-	```
-  ## Insert keys as vector elements and value as the count of elements present in vector
+```
+## Insert keys as vector elements and value as the count of elements present in vector
   
-  ```cpp
+ ```cpp
   unordered_map<int, int> q;
         for(int i=0;i<nums.size();i++){
             if(q.count(nums[i])>0){
