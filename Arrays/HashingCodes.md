@@ -83,7 +83,38 @@ q.erase(z);      // deletion by iterator
         cout<<"Element Not Found"<<endl;    
     }
   ```
-  
+## at()
+	returns the reference to the value with the element as key k. unordered_map.at(k);
+#### Parameter: It is the key value of the element whose mapped value we want to access.
+
+#### Return type : A reference to the mapped value of the element with a key value equivalent
+
+#### The method gives run-time error if key is not present.
+#### at() function can be used to access the mapped value and thus can edit, update etc
+```cpp
+	 unordered_map<string,int> my_marks = {
+                    {"Maths", 90},
+                    {"Physics", 87},
+                    {"Chemistry", 98},
+                    {"Computer Application", 94}
+                    };
+         
+                                     
+        my_marks.at("Physics") = 97;
+        my_marks.at("Maths") += 10;
+        my_marks.at("Computer Application") += 6;
+         
+        for (auto& i: my_marks)
+        {
+            cout<<i.first<<": "<<i.second<<endl;
+        }
+	Output:  
+
+Computer Application: 100
+Chemistry: 98
+Physics: 97
+Maths: 100
+```
 ##  Traverse unordered_map<>:
 ```cpp
 unordered_map<int, int> q;
