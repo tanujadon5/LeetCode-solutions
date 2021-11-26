@@ -149,5 +149,8 @@ for(auto z=q.rbegin();z!=q.rend();z++){   //traversing from end till beginning
 		      q[nums[i]]++;           //q[nums[i]] as key is inserted and by default value was 0 but with++ value became 1
         }
   ```
- 
+ #### How unordered_map at() is different from unordered_map operator() 
+
+Both at() and operator[] is used to refer the element present at the given position, the only difference is, at() throws out-of-range exception whereas operator[] shows undefined behavior i.e. if operator[] is used to find the value corresponding to key and if key is not present in unordered map, it will first insert the key into the map and then assign the default value ‘0’ corresponding to that key. . 
+
                                   
