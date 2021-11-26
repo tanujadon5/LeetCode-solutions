@@ -85,7 +85,7 @@ q.erase(z);      // deletion by iterator
   ```
   
 ##  Traverse unordered_map<>:
-
+```cpp
 unordered_map<int, int> q;
 for(int i=1;i<=3;i++){
 	 q[i]=i+1;                                    // construct pairs, I mean key-value combinations
@@ -98,6 +98,7 @@ for(auto z=q.begin();z!=q.end();z++){   //traversing from beginning till end
 for(auto z=q.rbegin();z!=q.rend();z++){   //traversing from end till beginning
      cout<<"key is "<<z->first<<" and the value is "<<z->second<<endl; 
 }
+	```
   ## Insert keys as vector elements and value as the count of elements present in vector
   
   ```cpp
